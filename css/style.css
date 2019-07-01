@@ -37,6 +37,7 @@ body {
   transition: all 1s ease;
 }
 
+/*---- Start scrolled nav effects ----*/
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.7) !important;
   font-size: 1rem;
@@ -50,6 +51,7 @@ body {
 .navbar.scrolled .navbar-brand img {
   height: 2rem;
 }
+/*---- End scrolled nav effects ----*/
 
 .navbar-nav {
   padding-right: 0.7rem;
@@ -94,6 +96,7 @@ body {
   letter-spacing: 0.2rem;
 }
 
+/*---- Start scrolldown animation ----*/
 .scrolldown {
   width: 40px;
   height: 40px;
@@ -148,6 +151,7 @@ body {
     opacity: 0;
   }
 }
+/*---- End scrolldown animation ----*/
 
 /*---- Projects Page ----*/
 .lead {
@@ -161,27 +165,6 @@ hr {
 
 .break {
   margin-top: 0;
-}
-
-.social-bar {
-  position: absolute;
-  left: -20px;
-  top: 10%;
-}
-.social-bar-item {
-  padding: 0 5px 0 25px;
-  color: whitesmoke;
-  font-size: 30px;
-  text-align: center;
-  transition-property: transform, opacity;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
-  opacity: 0.7;
-  background-color: #252525;
-}
-.social-bar-item:hover {
-  transform: translate(15px);
-  opacity: 1;
 }
 
 #projects {
@@ -220,6 +203,31 @@ hr {
 .img-wrap {
   overflow: hidden;
 }
+
+/*---- Start project links  ----*/
+.social-bar {
+  position: absolute;
+  left: -20px;
+  top: 13%;
+}
+
+.social-bar-item {
+  padding: 0 5px 0 25px;
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  transition-property: transform, opacity;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  opacity: 0.7;
+  background-color: #252525;
+}
+
+.social-bar-item:hover {
+  transform: translate(15px);
+  opacity: 1;
+}
+/*---- End project links  ----*/
 
 .pills {
   padding: 1rem;
