@@ -324,6 +324,20 @@ body {
   text-align: start;
   height: 100%;
   min-height: 100%;
+  background: rgb(17, 22, 32);
+  transform: none;
+  transition: none;
+}
+
+.about-card:hover {
+  transform: none;
+  transition: none;
+  background: rgb(17, 22, 32);
+  box-shadow: 0 0 10px 4px steelblue;
+}
+
+.about-card-body {
+  padding: 10px;
 }
 
 #contact {
