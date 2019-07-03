@@ -9,5 +9,8 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Michael Navarro",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
