@@ -25,6 +25,12 @@ body {
   height: 60px; /* fixed header height*/
 }
 
+#tech-header::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+}
+
 /*---- Navigation ----*/
 .navbar {
   padding-left: 5rem;
@@ -64,13 +70,23 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #00cece;
+  color: #11cefd;
 }
 
 /*---- Landing Page -----*/
 
 .home-inner {
-  background-image: url(../img/landing-background.jpg);
+  background-image: url(../img/blue-background.jpg);
+  filter: blur(2px);
+}
+
+.layer {
+  background-color: rgba(24, 53, 78, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .caption {
@@ -157,24 +173,17 @@ body {
 .lead {
   letter-spacing: 0.05rem;
   font-size: 1rem;
-}
-
-hr {
-  border: 1px solid #292929;
-}
-
-.break {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #projects {
   padding-top: 0;
   padding-bottom: 20px;
-  background-color: #303030;
+  background-color: rgb(23, 54, 82);
 }
 
 .card {
-  background: #313131;
+  background: rgb(21, 27, 39);
   margin: 0 auto;
   overflow: hidden;
   border: 0;
@@ -182,7 +191,7 @@ hr {
 }
 
 .card:hover {
-  background: #252525;
+  background: rgb(39, 75, 104);
   transform: scale(1.1);
 }
 
@@ -226,6 +235,7 @@ hr {
 .social-bar-item:hover {
   transform: translate(15px);
   opacity: 1;
+  background-color: rgb(39, 75, 104);
 }
 /*---- End project links  ----*/
 
@@ -237,6 +247,141 @@ hr {
 #cssPill {
   background-color: #2965f1;
 }
+/*---- End Projects Section ----*/
+
+/*---- Start Tech Stack Section ----*/
+#tech-header {
+  padding-top: 20px;
+  padding-top: 60px;
+  background: whitesmoke;
+  color: #111;
+  margin: 0 auto;
+}
+
+.tech-lead {
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+#technology {
+  color: #111;
+  background: whitesmoke;
+  padding-bottom: 30px;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+}
+
+.techCards {
+  display: flex;
+}
+
+.techCard {
+  background: rgb(21, 27, 39);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: 0.2s;
+  max-height: 250px;
+  min-height: 200px;
+  min-width: 180px;
+  max-width: 200px;
+}
+
+.techCard a {
+  color: whitesmoke;
+  font-size: 100px;
+  text-decoration: none;
+}
+
+/* .techCard a:hover {
+  color: #00cece;
+} */
+
+.techCard:not(:first-child) {
+  margin-left: -4rem;
+}
+
+.techCard:focus-within,
+.techCard:hover {
+  transform: translateY(-1rem);
+  background: rgb(39, 75, 104);
+}
+
+.techCard:hover ~ .techCard,
+.techCard:focus-within ~ .techCard {
+  transform: translateX(4rem);
+}
+
+/*---- End Tech Stack Section ----*/
+
+/*---- Start Contact Section ----*/
+
+#contact {
+  background: rgb(23, 54, 82);
+  padding: 60px;
+}
+
+#contact h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(17, 22, 32);
+  padding: 20px 40px;
+  outline: none;
+  color: whitesmoke;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px steelblue;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 180px;
+}
+
+.form-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-btn {
+  width: 100%;
+  border: 0;
+  background: #2b4d6e;
+  color: whitesmoke;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contact-form-btn:hover {
+  background: steelblue;
+}
+
+/*---- End Contact Section ----*/
+
+
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -266,6 +411,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   .navbar-brand img {
     transform: translateX(-20px);
   }
+
   .navbar.scrolled .navbar-brand img {
     transform: translateX(0);
   }
