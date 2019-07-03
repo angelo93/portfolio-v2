@@ -1,11 +1,10 @@
 {
-  "name": "modernportfolio",
+  "name": "portfolioV2",
   "version": "1.0.0",
   "description": "Modern Portfolio",
   "main": "index.js",
   "homepage": "https://angelo93.github.io/portfolioV2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
   },
   "author": "Michael Navarro",
