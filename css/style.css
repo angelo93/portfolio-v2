@@ -32,6 +32,14 @@ body {
 }
 
 /*---- Navigation ----*/
+.collapse {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar:focus {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .navbar {
   padding-left: 5rem;
   padding-right: 5rem;
