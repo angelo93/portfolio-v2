@@ -9,14 +9,19 @@
 var $nav = $("#mainNavbar");
 
 //---- Navbar collapse on click ----//
-$(document).ready(function() {
-  $(".navbar-nav li a").click(function(event) {
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function (event) {
     $(".navbar-collapse").collapse("hide");
   });
 });
 
+$(".navbar-toggler").click(function () {
+  $("#mainNavbar").toggleClass("activated");
+});
+
 // ---- Navbar scroll animation logic ----//
 $(window).scroll(scrollChange);
+
 function scrollChange() {
   if ($(document).scrollTop() > $nav.height()) {
     $("#mainNavbar").addClass("scrolled");
@@ -25,6 +30,6 @@ function scrollChange() {
   }
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   scrollChange();
 });
