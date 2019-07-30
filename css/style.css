@@ -376,7 +376,12 @@ body {
 /*---- End Tech Stack Section ----*/
 
 /*---- Start Contact Section ----*/
+.about-me {
+  padding: 5px;
+}
+
 .about-card {
+  width: 100%;
   padding: 5px;
   text-align: start;
   height: 100%;
@@ -399,7 +404,7 @@ body {
 
 #contact {
   background: rgb(23, 54, 82);
-  padding: 60px;
+  padding: 60px 5px 20px 5px;
 }
 
 #contact h1 {
@@ -491,5 +496,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
   .navbar.scrolled .navbar-brand img {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 3rem;
+    transition: all 1s ease;
   }
 }
