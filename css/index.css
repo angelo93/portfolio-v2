@@ -182,7 +182,7 @@ body {
 
 #projects {
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   background-color: rgb(23, 54, 82);
 }
 
@@ -380,6 +380,12 @@ body {
 /*---- End Tech Stack Section ----*/
 
 /*---- Start Contact Section ----*/
+.resume {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
 .about-card {
   width: 100%;
   padding: 5px;
@@ -400,6 +406,10 @@ body {
 
 .about-card-body {
   padding: 10px;
+}
+
+.about-card-body ul {
+  padding-left: 25px;
 }
 
 #contact {
