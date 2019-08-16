@@ -43,6 +43,10 @@ body {
   transition: all 1s ease;
 }
 
+.navbar.activated {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
 /*---- Start scrolled nav effects ----*/
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.7) !important;
@@ -81,7 +85,7 @@ body {
 }
 
 .layer {
-  background-color: rgba(24, 53, 78, 0.5);
+  background-color: rgba(24, 53, 78, 0.55);
   position: absolute;
   top: 0;
   left: 0;
@@ -178,7 +182,7 @@ body {
 
 #projects {
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   background-color: rgb(23, 54, 82);
 }
 
@@ -376,8 +380,10 @@ body {
 /*---- End Tech Stack Section ----*/
 
 /*---- Start Contact Section ----*/
-.about-me {
-  padding: 5px;
+.resume {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 .about-card {
@@ -385,7 +391,6 @@ body {
   padding: 5px;
   text-align: start;
   height: 100%;
-  min-height: 100%;
   background: rgb(17, 22, 32);
   transform: none;
   transition: none;
@@ -402,9 +407,13 @@ body {
   padding: 10px;
 }
 
+.about-card-body ul {
+  padding-left: 25px;
+}
+
 #contact {
   background: rgb(23, 54, 82);
-  padding: 60px 5px 20px 5px;
+  padding: 60px 5px 40px 5px;
 }
 
 #contact h1 {
@@ -483,6 +492,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+@media (min-width: 992px) {
+  #about-me {
+    padding-left: 80px;
+  }
+}
 
 @media (max-width: 815px) {
   .navbar {
@@ -503,5 +517,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
   .navbar-brand img {
     height: 3rem;
     transition: all 1s ease;
+  }
+  #about-me {
+    font-size: .8rem;
   }
 }
