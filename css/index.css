@@ -85,7 +85,7 @@ body {
 }
 
 .layer {
-  background-color: rgba(24, 53, 78, 0.5);
+  background-color: rgba(24, 53, 78, 0.55);
   position: absolute;
   top: 0;
   left: 0;
@@ -182,7 +182,7 @@ body {
 
 #projects {
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   background-color: rgb(23, 54, 82);
 }
 
@@ -380,12 +380,17 @@ body {
 /*---- End Tech Stack Section ----*/
 
 /*---- Start Contact Section ----*/
+.resume {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
 .about-card {
   width: 100%;
   padding: 5px;
   text-align: start;
   height: 100%;
-  min-height: 100%;
   background: rgb(17, 22, 32);
   transform: none;
   transition: none;
@@ -400,6 +405,10 @@ body {
 
 .about-card-body {
   padding: 10px;
+}
+
+.about-card-body ul {
+  padding-left: 25px;
 }
 
 #contact {
