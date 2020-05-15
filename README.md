@@ -1,6 +1,6 @@
 # Modern Portfolio Website
 
-### Live Preview: https://angelo93.github.io/portfolioV2/
+### Live Preview: https://angelo93.github.io/portfolio-v2/
 
 #### Description:
 Responsive portfolio website to showcase my skills and projects. Constantly updated as I learn new skills to my repertoire.
